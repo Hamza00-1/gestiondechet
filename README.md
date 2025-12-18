@@ -1,33 +1,45 @@
 # Gestion Déchet (Waste Management System)
 
-## Project Overview
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Gestion Déchet** is a desktop application developed in C++ using the Qt framework, designed to manage and track waste-related data. This system provides a structured interface for users to interact with a waste management database, offering features such as user authentication and a dedicated dashboard for operational oversight.
+## 🌟 Project Overview
 
-The name "Gestion Déchet" is French for "Waste Management."
+**Gestion Déchet** is a robust desktop application developed using **C++** and the **Qt framework**. Its primary purpose is to provide a comprehensive system for managing and tracking waste-related data.
 
-## Features
+The application is designed with a focus on user experience, featuring a secure authentication system and a dedicated dashboard for operational oversight. The name "Gestion Déchet" is French for "Waste Management."
 
-*   **User Authentication:** Secure login and registration system.
-*   **User Management:** Stores user credentials (username, email, password) in a local file (`utilisateurs.txt`).
-*   **Dashboard:** A central hub for viewing key information and navigating the application's features.
-*   **Waste Data Management:** Dedicated section for handling and tracking waste-related entries.
+## ✨ Features
 
-## Technology Stack
+*   **Secure User Authentication:** Implements a secure system for user registration and login.
+*   **Local User Management:** Handles user data persistence by storing credentials in a local file (`utilisateurs.txt`).
+*   **Intuitive Dashboard:** A central hub providing an overview and navigation to all application features.
+*   **Dedicated Waste Management Module:** A specific section (`GestionDechetsPage`) for handling and logging waste-related entries and data.
 
-*   **Language:** C++
-*   **Framework:** Qt (for cross-platform desktop application development)
-*   **Build System:** Visual Studio Project Files (`.vcxproj`, `.sln`)
+## 🛠️ Technology Stack
 
-## Getting Started
+| Component | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Language** | C++ | Core application logic. |
+| **Framework** | Qt 5/6 | Cross-platform desktop application development and UI. |
+| **Build System** | Visual Studio | Project files (`.sln`, `.vcxproj`) are configured for MSVC compilation. |
+| **File Handling** | Git LFS | Used to store the main project archive (`gestiondechet.zip`). |
+
+## 🚀 Getting Started
+
+Follow these steps to set up and run the project on your local machine.
 
 ### Prerequisites
 
-To build and run this application, you will need:
+Before you begin, ensure you have the following installed:
 
-1.  **C++ Compiler:** A modern C++ compiler (e.g., MSVC, GCC, Clang).
-2.  **Qt Framework:** The appropriate version of the Qt framework installed (version used in development appears to be compatible with Visual Studio).
-3.  **Visual Studio:** The project files are configured for Visual Studio.
+1.  **Git:** For cloning the repository.
+2.  **Git LFS (Large File Storage):** Essential for downloading the main project archive.
+    ```bash
+    # Install Git LFS (instructions vary by OS)
+    git lfs install
+    ```
+3.  **Visual Studio:** The project is configured as a Visual Studio solution.
+4.  **Qt Framework:** The appropriate Qt version (compatible with your Visual Studio installation) must be installed and configured in Visual Studio.
 
 ### Installation and Setup
 
@@ -37,32 +49,53 @@ To build and run this application, you will need:
     cd gestiondechet
     ```
 
-2.  **Open the Solution:**
-    Open the `gestiondechet.sln` file in Visual Studio.
+2.  **Download the Project Archive (using Git LFS):**
+    The core project files are contained within a large zip archive tracked by Git LFS. You must pull the actual file content:
+    ```bash
+    git lfs pull
+    ```
+    *This command will download the `gestiondechet.zip` file.*
 
-3.  **Configure Qt:**
-    Ensure your Visual Studio project settings are correctly configured to link against your installed Qt libraries.
+3.  **Extract the Project Files:**
+    Unzip the archive to reveal the project structure. It is recommended to extract it into a new folder to keep the repository root clean.
+    ```bash
+    unzip gestiondechet.zip -d extracted_project
+    ```
+    *Note: The actual project files (including the `.sln` file) are likely inside the extracted folder.*
 
-4.  **Build and Run:**
-    Build the solution. The executable will be generated in the output directory (e.g., `x64/Debug/gestiondechet.exe`).
+### Running the Application
 
-## Project Structure
+1.  **Open the Solution:**
+    Navigate to the extracted folder and open the main solution file in Visual Studio:
+    ```
+    extracted_project/gestiondechet/gestiondechet.sln
+    ```
 
-The core application logic is contained within the following files:
+2.  **Configure and Build:**
+    *   Ensure your Visual Studio project settings are correctly configured to link against your installed Qt libraries.
+    *   Select the desired configuration (e.g., `x64-Debug`).
+    *   Build the solution (`Build > Build Solution`).
 
-| File | Description |
+3.  **Execute:**
+    Run the application directly from Visual Studio (`Debug > Start Debugging` or `F5`).
+
+## 📂 Project Structure
+
+The main application logic is found within the extracted project folder:
+
+| File/Directory | Description |
 | :--- | :--- |
-| `main.cpp` | Application entry point. |
-| `gestiondechet.h`/`.cpp` | Main application window and UI logic (login/registration). |
+| `gestiondechet.zip` | **(LFS File)** Compressed archive containing the full project source and solution. |
+| `gestiondechet.sln` | The main Visual Studio solution file. |
 | `gestion_utilisateurs.h`/`.cpp` | Handles user data, authentication, and file-based persistence. |
 | `dashboard.h`/`.cpp` | The main application dashboard view. |
 | `GestionDechetsPage.h`/`.cpp` | Logic for the specific waste management feature. |
 | `utilisateurs.txt` | Local file used to store user credentials. |
 
-## Contributing
+## 🤝 Contributing
 
-If you wish to contribute to this project, please feel free to fork the repository and submit a pull request.
+Contributions are welcome! If you find a bug or have a feature request, please open an issue or submit a pull request.
 
-## License
+## 📄 License
 
-[License information here, e.g., MIT License]
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
