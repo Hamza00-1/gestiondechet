@@ -1,0 +1,36 @@
+```
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+# Build Folders
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+
+# Qt
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+
+# Other
+*.ncb
+*.suo
+*.user
+*.aps
+*.bak
+*.tmp
+*.log
+
+# Executables
+*.exe
+*.dll
+*.obj
+*.ilk
+*.pdb
+*.idb
+
+```

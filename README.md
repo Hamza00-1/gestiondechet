@@ -1,5 +1,6 @@
 # Gestion Déchet (Waste Management System)
 
+[![Project Status](https://img.shields.io/badge/Status-Academic%20Project-blue.svg)](https://github.com/Hamza00-1/gestiondechet)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🌟 Project Overview
@@ -7,6 +8,10 @@
 **Gestion Déchet** is a robust desktop application developed using **C++** and the **Qt framework**. Its primary purpose is to provide a comprehensive system for managing and tracking waste-related data.
 
 The application is designed with a focus on user experience, featuring a secure authentication system and a dedicated dashboard for operational oversight. The name "Gestion Déchet" is French for "Waste Management."
+
+### Academic Context
+
+This project was developed as part of the curriculum at the **École d'Ingénierie Digitale et d'Intelligence Artificielle (EIDIA)** at the **Université Euro-Méditerranéenne de Fès (UEMF)**. It serves as a practical application of C++ and object-oriented programming principles in a real-world scenario.
 
 ## ✨ Features
 
@@ -94,7 +99,7 @@ The main application logic is found within the extracted project folder:
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you find a bug or have a feature request, please open an issue or submit a pull request.
+We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
 
 ## 📄 License
 
